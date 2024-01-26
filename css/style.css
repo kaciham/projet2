@@ -1,0 +1,80 @@
+:root {
+    --blue-color: #0065FC;
+    --light-blue-color: #DEEBFF;
+    --darker-grey-color: #D9D9D9;
+    --grey--color: #f2f2f2;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    gap: 5px;
+    font-family: Raleway;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header > ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header > ul > li {
+
+    padding: 0px 5px;
+}
+
+header li:hover {
+    color: blue;
+    border-top: solid 2px blue;
+}
+
+header li:focus {
+    color: blue;
+    border-top: solid 2px blue;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul {
+    
+}
+
+footer h3 {
+    margin: 0px
+}
