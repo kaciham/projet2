@@ -26,9 +26,10 @@
                 <path d="M111 45.608L113.172 29.608H118.138L120 45.608H111Z" fill="#0065FC"/>
                 </svg>
             <ul>
-                <li>Hébergements</li>
-                <li>Activités</li>
+                <li><a href="#hebergements">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
             </ul>
+        
         </header>
         <main>
             <div class="search">
@@ -41,7 +42,7 @@
                         <div class="border"> 
                             <div class="barItem"><i class="fa-solid fa-location-dot"></i></div>
                             <div class="barItem"><input type="text"></div>
-                            <div class="barItem"><button type="submit"><span class="searchicon">Rechercher</span><span class=""></span></button></div>
+                            <div class="barItem"><button type="submit"><span class="searchtext">Rechercher</span><span><i class="fa-solid fa-magnifying-glass"></i></span></button></div>
                         </div>
                     </div>
                     <div class="filtres">
@@ -59,7 +60,7 @@
             </div>
             <div class="hebergements-and-populaires">
                
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                         <!-- <i class="fa-solid fa-chart-line" aria-hidden="true"></i> -->
@@ -191,6 +192,7 @@
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
+                    
                     <div class="populaires-cards">
                         <a href="#">
                             <article class="card">
@@ -253,6 +255,7 @@
                 </section>
             </div>
             <div>
+                <section id="activites">
                 <h2>Activités à Marseille</h2>
                     <div class="activites">
                     
@@ -290,6 +293,7 @@
                         </article>
                     </div>
             </div>
+        </section>
         </main>
         <footer>
             <div>
