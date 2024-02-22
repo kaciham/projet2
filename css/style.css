@@ -176,6 +176,7 @@ header li:hover {
     border-top: var(--main-bg-color) solid 0.5px;
     border-bottom:  var(--main-bg-color) solid 0.5px;;
     text-align: center;
+    font-weight: 700;
 }
 
 .barItem:last-child {
@@ -441,21 +442,8 @@ footer h2 {
 
 /** responsive **/
 
-/* Normal desktop :1200px. */
-@media (min-width: 1200px) and (max-width: 1500px) {
+/* Tablet */
 
-    /*     put your css */
-    }
-    
-    
-    /* Normal desktop :992px. */
-    @media (min-width: 1301px) and (max-width: 1600px) {
-    
-      /*     put your css */
-    }
-    
-     
-    /* Tablet desktop :768px. */
     @media (min-width: 1021px) and (max-width: 1300px) {
 
 
@@ -512,7 +500,8 @@ footer h2 {
         }
 
     }
-    /* small mobile :320px. */
+
+    /* phone */
     @media (max-width: 1020px) {
 
         .titleFiltre {
