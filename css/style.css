@@ -245,12 +245,9 @@ header li:hover {
     background-color: var(--filter-bg-color);
 }
 
-.search form {
-    margin-top: 20px;
-}
-
 .search h2 {
     margin: 10px 0px ;
+    height: 40px;
 }
 
 .search h4 {
@@ -306,18 +303,18 @@ header li:hover {
     /* width: 100%; */
     justify-content:space-around;
     align-items: center;
+    gap: 10px;
     /* gap: 5px; */
 }
 
 .hebergements-cards .card {
     margin-top: 33px;
     margin: 0px 10px;
-    /* flex-direction: row; */
-    flex: 1 1 33%;
-    /* justify-content: space-around; */
+    /* min-width: 14rem; */
+    flex: 1 1 40%;
     min-width: 240px;
-
-   /* width: 100%; */
+    height: auto;
+    gap: 10px;
 }
 
 .hebergements-cards img {
@@ -426,6 +423,7 @@ footer div {
 
 footer li{
     padding: 5px 0px;
+    /* text-overflow: calc(100%); */
 }
 
 footer h3 {
@@ -444,13 +442,17 @@ footer h2 {
 
     @media (min-width: 768px) and (max-width: 1024px) {
 
-
+    
+        .hebergements {
+            width: 100%;
+        }
         .hebergements-cards .card {
             margin-top: 33px;
-            margin: 0px 10px;
+            margin: 5px 10px;
             /* flex-direction: row; */
-            flex: 1 0 33%;
-            min-width: 250px;
+            flex: 1 0 40%;
+            min-width: 240px;
+            height: auto;
             flex-wrap: wrap;
             /* justify-content: space-around; */
             /* min-width: 190px;;
@@ -459,7 +461,7 @@ footer h2 {
         }
 
         .search {
-            width: 90%;
+            width: 100%;
         }
 
         .hebergements-and-populaires {
@@ -495,10 +497,23 @@ footer h2 {
             align-items: center;
         }
 
+        h1 {
+            /* margin: 10px; */
+            font-size: 25px;
+        }
+
+        .activites img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width:99%;
+            height: 200px;
+            object-fit: cover;
+        }
+
     }
 
     /* phone */
-    @media (max-width: 375px) {
+    @media (max-width: 767px) {
 
         .titleFiltre {
             display: flex;
@@ -588,22 +603,31 @@ footer h2 {
             width: 100%;
         }
 
-        .filtres {
+        .filtreDiv h2{ 
             display: flex;
-            /* flex-direction: column; */
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .filtres {
+            /* display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
             flex: 1 0 40%;
-            /* width: 100%; */
-            margin: 0px 10px 30px 10px;
-        
+            margin: 0px 10px 30px 10px; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 13px;
+            grid-row-gap: 14px;
         }
 
         .filter{ 
-            min-width: 30%;
-            height: 70px;
+            min-width: 30px;
+            height: 50px;
             text-align: center;
-            justify-content: center;
+
+            /* padding: auto; */
         }
 
         .activites {
@@ -661,7 +685,7 @@ footer h2 {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            /* align-items: center; */
             /* max-width: 200px; */
         }
 
@@ -685,7 +709,7 @@ footer h2 {
         }
 
         .barItem:nth-last-child(2){
-            min-width: 66%;
+            min-width: 60%;
         }
 
         /* .iconblue {
@@ -716,6 +740,45 @@ footer h2 {
             height: 30px;
             line-height: 30px;  
         }
+
+        h1 {
+            margin: 10px;
+            font-size: 25px;
+        }
+
+        .search p {
+            margin: 5px 10px;
+            width: 100%;
+            /* text-align: left; */
+        }
+
+        main {
+            margin: 0px 10px;
+        }
+
+        .border {
+            display: flex;
+            margin: 0px 5px;
+        }
+
+        .filter h3 {
+            margin: 0px;
+            font-size:small;
+        } 
+        
+        li {
+            text-overflow: clip;
+        }
+
+        footer div {
+            width: 70%;
+        }
+
+        form h2 {
+            text-align: left;
+        }
+
+
     }
 
     
